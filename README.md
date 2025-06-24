@@ -6,7 +6,7 @@ A personal full-stack learning project to deploy a website, API, and database on
 
 - React (Frontend)
 - Node.js + Apollo Server or aiohttp (Backend)
-- PostgreSQL or SQLite (Database)
+- PostgreSQL (Database)
 - Nginx (Web server)
 - Cloudflare (DNS + SSL)
 - Oracle Cloud / DigitalOcean (VM hosting)
