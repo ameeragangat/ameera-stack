@@ -5,6 +5,7 @@ A personal full-stack learning project to deploy a website, API, and database on
 ## Tech Stack
 
 - React (Frontend)
+- Tailwind CSS (no external component libraries)
 - Node.js + Apollo Server or aiohttp (Backend)
 - PostgreSQL (Database)
 - Nginx (Web server)
