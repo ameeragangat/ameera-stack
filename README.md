@@ -1,6 +1,6 @@
 # Ameera Stack
 
-A personal full-stack learning project to deploy a website, API, and database on a VM with a custom domain: `ameera.gangat.com`.
+A personal full-stack learning project to deploy a website, API, and database on a VM with a custom domain: `ameeragangat.com`.
 
 ## Tech Stack
 
