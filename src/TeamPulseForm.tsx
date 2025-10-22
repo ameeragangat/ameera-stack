@@ -4,7 +4,7 @@ import TeamInsightCard from "./TeamInsightCard";
 export default function TeamPulseForm() {
   const [energy, setEnergy] = useState("medium");
   const [mood, setMood] = useState("motivated");
-  const [duration, setDuration] = useState("");
+  const [focusCapacity, setfocusCapacity] = useState("");
   const [comment, setComment] = useState("");
   const [result, setResult] = useState(false);
 
@@ -22,7 +22,11 @@ export default function TeamPulseForm() {
         <p className="text-gray-700 mb-4">
           Your check-in helps us understand the Software team’s rhythm today.
         </p>
-        <TeamInsightCard energy={energy} mood={mood} duration={duration} />
+        <TeamInsightCard
+          energy={energy}
+          mood={mood}
+          focusCapacity={focusCapacity}
+        />
       </div>
     );
   }
@@ -67,18 +71,21 @@ export default function TeamPulseForm() {
         </label>
 
         <label className="block">
-          <span className="text-gray-700">Focused Work Duration (min)</span>
+          <span className="text-gray-700">Focus Capacity (min)</span>
+          <small className="text-gray-500 block">
+            How long can you focus at a time today?
+          </small>
           <select
-            value={duration}
-            onChange={(e) => setDuration(e.target.value)}
+            value={focusCapacity}
+            onChange={(e) => setfocusCapacity(e.target.value)}
             className="mt-1 w-full border rounded-md p-2 focus:ring-2 focus:ring-indigo-400"
             required
           >
             <option value="">Select</option>
-            <option value="15">15</option>
-            <option value="30">30</option>
-            <option value="45">45</option>
-            <option value="60">60</option>
+            <option value="15">15 — Quick bursts</option>
+            <option value="30">30 — Pomodoro pace</option>
+            <option value="45">45 — Deep work zone</option>
+            <option value="60">60 — Fully focused today!</option>
           </select>
         </label>
 

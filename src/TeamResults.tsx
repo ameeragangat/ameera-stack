@@ -11,7 +11,7 @@ import {
 interface TeamResultsData {
   avgEnergy: string;
   topMood: string;
-  avgDuration: number;
+  avgFocusCapacity: number;
   moodDistribution: { mood: string; count: number }[];
 }
 
@@ -23,7 +23,7 @@ export default function TeamResults() {
     const simulatedData: TeamResultsData = {
       avgEnergy: "moderate",
       topMood: "motivated",
-      avgDuration: 38,
+      avgFocusCapacity: 42,
       moodDistribution: [
         { mood: "motivated", count: 5 },
         { mood: "focused", count: 3 },
@@ -58,7 +58,7 @@ export default function TeamResults() {
       </p>
 
       <p className="text-gray-700 mb-4">
-        <strong>Avg Focus Duration:</strong> {data.avgDuration} min
+        <strong>Avg Focus Capacity:</strong> {data.avgFocusCapacity} min
       </p>
 
       <div className="mt-4">

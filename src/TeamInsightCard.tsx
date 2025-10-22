@@ -1,13 +1,13 @@
 interface TeamInsightCardProps {
   energy: string;
   mood: string;
-  duration: string;
+  focusCapacity: string;
 }
 
 export default function TeamInsightCard({
   energy,
   mood,
-  duration,
+  focusCapacity,
 }: TeamInsightCardProps) {
   const messages: Record<string, string> = {
     low: "Energy seems low today — might be a good time for lighter tasks or collaborative sessions",
@@ -27,8 +27,8 @@ export default function TeamInsightCard({
       </p>
 
       <p className="text-gray-600 text-sm">
-        Mood: <span className="font-medium">{mood}</span> · Focus Duration:{" "}
-        <span className="font-medium">{duration}</span> min
+        Mood: <span className="font-medium">{mood}</span> · Focus Capacity:{" "}
+        <span className="font-medium">{focusCapacity}</span> min
       </p>
     </div>
   );
